@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  extra_points: 1
+  army: one
+
+two:
+  type: 
+  extra_points: 1
+  army: two
