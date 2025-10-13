@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_10_13_202413) do
     t.index ["army_id"], name: "index_units_on_army_id"
   end
 
-  add_foreign_key "battles", "attackers"
-  add_foreign_key "battles", "defenders"
+  add_foreign_key "battles", "armies", column: "attacker_id"
+  add_foreign_key "battles", "armies", column: "defender_id"
   add_foreign_key "units", "armies"
 end
